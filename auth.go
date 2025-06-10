@@ -76,11 +76,3 @@ func GetUserID(r *http.Request) string {
 	val, _ := r.Context().Value(UserIDKey).(string)
 	return val
 }
-
-// LoggerFromContext достаёт контекстный логгер (если нет — возвращает nil)
-func LoggerFromContext(r *http.Request) *log.Logger {
-	if lg, ok := r.Context().Value(loggerKey).(*log.Logger); ok {
-		return lg
-	}
-	return nil
-}
