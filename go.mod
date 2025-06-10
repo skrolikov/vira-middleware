@@ -3,6 +3,7 @@ module github.com/skrolikov/vira-middleware
 go 1.24.3
 
 require (
+	github.com/google/uuid v1.6.0
 	github.com/skrolikov/vira-config v0.1.5
 	github.com/skrolikov/vira-jwt v0.1.2
 	github.com/skrolikov/vira-logger v1.0.1
